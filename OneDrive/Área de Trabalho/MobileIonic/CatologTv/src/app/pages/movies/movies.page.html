@@ -1,11 +1,16 @@
 <ion-header>
+  
   <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/"></ion-back-button>
+    </ion-buttons>
+
     <ion-title color="danger">Filmes Mais Acessados</ion-title>
     <ion-buttons slot="end">
-      <!-- Botão para alternar o tema -->
-      <ion-button (click)="toggleTheme()">
+      
+      <ion-buttons (click)="toggleTheme()">
         <ion-icon [name]="isDarkMode ? 'sunny' : 'moon'"></ion-icon>
-      </ion-button>
+      </ion-buttons>
     </ion-buttons>
   </ion-toolbar>
 </ion-header>
@@ -20,7 +25,7 @@
         {{ item.title }}
         <p>{{ item.release_date | date: 'y' }}</p>
       </ion-label>
-      <ion-badge slot="end">{{ item.vote_average }}</ion-badge>
+      <ion-badge color="danger" slot="end">{{ item.vote_average }}</ion-badge>
     </ion-item>
   </ion-list>
 

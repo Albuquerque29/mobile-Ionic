@@ -1,0 +1,6 @@
+.image-container img {
+  width: 100%;  /* Ajusta a largura da imagem para ocupar toda a largura do container */
+  max-width: 400px;  /* Limita a largura máxima da imagem */
+  margin: 20px auto;  /* Centraliza a imagem com uma margem */
+  display: block;
+}
